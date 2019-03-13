@@ -1,0 +1,12 @@
+spring:
+
+  application:
+    name: rabbit
+
+  profiles:
+    active: dao
+
+#  rabbitmq:
+#    host: host
+#    username: username
+#    password: password

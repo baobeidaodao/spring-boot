@@ -1,0 +1,3 @@
+rootProject.name = 'spring-boot'
+include 'admin', 'jdbc', 'jpa', 'mail', 'quartz', 'web'
+

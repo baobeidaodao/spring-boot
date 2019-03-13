@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: redis
+
+  profiles:
+    active: dao
+
+  redis:
+     host: localhost

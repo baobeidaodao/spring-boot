@@ -1,0 +1,44 @@
+spring:
+  application:
+    name: jdbc
+
+  profiles:
+    active: dao
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.mysql.cj.jdbc.MysqlDataSource
+    # url:
+    # jdbc-url:
+    # username:
+    # password:
+
+  multiple-datasource:
+    primary:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.mysql.cj.jdbc.MysqlDataSource
+      # jdbc-url:
+      # username:
+      # password:
+
+    secondary:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.mysql.cj.jdbc.MysqlDataSource
+      # jdbc-url:
+      # username:
+      # password:
+
+  dynamic-datasource:
+    datasource:
+      datasource-0:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        type: com.mysql.cj.jdbc.MysqlDataSource
+        # jdbc-url:
+        # username:
+        # password:
+      datasource-1:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        type: com.mysql.cj.jdbc.MysqlDataSource
+        # jdbc-url:
+        # username:
+        # password:

@@ -1,0 +1,23 @@
+server:
+  port: 8005
+
+spring:
+  application:
+    name: admin
+
+  profiles:
+    active: dao
+
+  boot:
+    admin:
+      client:
+        url: http://localhost:${server.port}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS

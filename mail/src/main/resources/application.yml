@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: mail
+
+  profiles:
+    active: dao
+
+  thymeleaf:
+    mode: LEGACYHTML5
+
+  mail:
+    # host:
+    # port:
+    # username:
+    # password:
+    # protocol: smtp
+    # default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+  dynamic-mail:
+    mail:
+      mail-0:
+        protocol: smtp
+        # host:
+        # port:
+        # username:
+        # password:
+      mail-1:
+        protocol: smtp
+        # host:
+        # port:
+        # username:
+        # password:

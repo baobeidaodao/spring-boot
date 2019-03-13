@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: jdbc
+
+  profiles:
+    active: dao
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.mysql.cj.jdbc.MysqlDataSource
+    # url:
+    # jdbc-url:
+    # username:
+    # password:

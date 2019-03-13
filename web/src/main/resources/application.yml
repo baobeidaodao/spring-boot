@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: web
+
+  profiles:
+    active: dao
+
+# server:
+#   port:
